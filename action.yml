@@ -1,1 +1,13 @@
-
+name: 'owocto spowork'
+description: 'Says owo to you'
+inputs:
+  who-to-owo:  # id of input
+    description: 'Who to owo at'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we owoed at you'
+runs:
+  using: 'node12'
+  main: 'index.js'
