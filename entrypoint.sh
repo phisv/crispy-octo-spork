@@ -2,6 +2,8 @@
 
 time=$(date)
 n=$RANDOM
-mapfile -t arr < /phrases.txt
+
+IFS=$'\n' GLOBIGNORE='*' command eval  'arr=($(cat /phrases.txt))'
+
 echo "${arr[n%${#arr[*]}]}, $1!"
 echo "::set-output name=time::$time"
