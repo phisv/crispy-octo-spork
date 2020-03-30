@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: owo action step
       id: owo
-      uses: phisv/crispy-octo-spork@v1
+      uses: phisv/crispy-octo-spork@master
       with:
         who-to-owo: 'phisv'
     - name: output time
