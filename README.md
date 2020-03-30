@@ -1,2 +1,2 @@
 # crispy-octo-spork
-github actions
+My explorations with GitHub Actions.
