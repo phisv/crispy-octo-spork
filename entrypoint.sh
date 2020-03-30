@@ -2,8 +2,7 @@
 
 time=$(date)
 n=$RANDOM
-
-IFS=$'\n' GLOBIGNORE='*' command eval  'arr=($(cat /phrases.txt))'
+arr=("asf sfwe" w rre fwei)
 
 echo "${arr[n%${#arr[*]}]}, $1!"
 echo "::set-output name=time::$time"
