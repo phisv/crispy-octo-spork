@@ -1,15 +1,15 @@
 name: 'owocto spowork'
-description: 'Says owo to you'
+description: 'Outputs encourages messages to you'
 inputs:
-  who-to-owo:  # id of input
-    description: 'Who to owo at'
+  user:  # id of input
+    description: 'User to encourage'
     required: true
-    default: 'World'
+    default: 'everyone'
 outputs:
   time: # id of output
-    description: 'The time we owoed at you'
+    description: 'Time of message output'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-owo }}
+    - ${{ inputs.user }}
