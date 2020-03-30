@@ -2,6 +2,6 @@
 
 time=$(date)
 n=$RANDOM
-echo $BASH_VERSION
+bash --version
 
 echo "::set-output name=time::$time"
